@@ -16,7 +16,7 @@ int kali(int a, int b) {
 
 int bagi(int a, int b) {
     if (b == 0) {
-        cout << "Error: Tidak bisa membagi dengan 0!" << endl;
+        cout << "Error : Tidak bisa di bagi 0" << endl;
         return 0;
     }
     return a / b;
@@ -26,12 +26,12 @@ int main() {
     int pilihan;
     int a, b, hasil;
 
-    cout << "=== KALKULATOR SEDERHANA ===" << endl;
+    cout << "===== KALKULATOR =====" << endl;
     cout << "1. Tambah" << endl;
     cout << "2. Kurang" << endl;
     cout << "3. Kali" << endl;
     cout << "4. Bagi" << endl;
-    cout << "Pilih operasi (1-4): ";
+    cout << "Pilih (1-4): ";
     cin >> pilihan;
 
     cout << "Masukkan angka pertama: ";
@@ -53,7 +53,7 @@ int main() {
             hasil = bagi(a, b);
             break;
         default:
-            cout << "Pilihan tidak valid!" << endl;
+            cout << "Pilihan tidak bisa " << endl;
             return 0;
     }
 
