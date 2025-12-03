@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+
+int power(int a, int b) {
+    if (b == 0)
+        return 1;
+    return a * power(a, b - 1);
+}
+
+int main() {
+    int a, b;
+
+    cout << "===== REKURSIF PANGKAT ======" << endl;
+    cout << "Masukkan angka dasar: ";
+    cin >> a;
+    cout << "Masukkan pangkat    : ";
+    cin >> b;
+
+    int hasil = power(a, b);
+
+    cout << "Hasil dari " << a << "^" << b << " adalah: " << hasil << endl;
+
+    return 0;
+}
